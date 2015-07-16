@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo RPi temperatures</title>
+	<meta name="viewport" content="width=device-width" initial-scale="1.0" />
+	<link rel="stylesheet" type="text/css" href="vendor/bower/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bower/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/chart.css">
+</head>
+<body>
+	<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-brand">IoT @home</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div id="target">
+			<div class="row">
+				<div class="col-xs-8" id="detail-placeholder" style="width:600px; height:300px;"></div>
+				<div class="col-xs-4" id="detail-legend" style=" height:100px;"></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-8" id="overview-placeholder" style="width:600px; height:75px;"></div>
+			</div>
+		</div>
+		<div style="margin-top:40px;">
+		  <dl>
+			<dt>Upper plot</dt>
+			<dd>blue background corresponds to night time (sunset to sunrise, calculated by date and longitude/latitude)</dd>
+			<dt>Lower plot</dt>
+			<dd>yellow background corresponds to weekends (Sat 00:00 to Mon 00:00)</dd>
+		  </dl>
+		</div>
+	</div>
+	<script src="vendor/bower/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="vendor/bower/moment/min/moment.min.js"></script>
+	<script src="vendor/custom/jquery-easy-overlay/jquery-easy-overlay.js"></script>
+	<script src="vendor/bower/flot/jquery.flot.js"></script>
+	<script src="vendor/bower/flot/jquery.flot.time.js"></script>
+	<script src="vendor/bower/flot/jquery.flot.navigate.js"></script>
+	<script src="vendor/bower/flot/jquery.flot.crosshair.js"></script>
+	<script src="vendor/custom/flot-rangeselection/jquery.flot.rangeselection.js"></script>
+	<script src="scripts/suncalc.js"></script>
+	<script src="scripts/rest.js"></script>
+	<script src="scripts/chart.js"></script>
+</body>
+</html>

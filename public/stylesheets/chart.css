@@ -1,0 +1,68 @@
+#placeholder .button {
+    position: absolute;
+    cursor: pointer;
+}
+
+#placeholder div.button {
+    font-size: smaller;
+    color: #999;
+    background-color: #eee;
+    padding: 2px;
+}
+
+input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+    display: inline;
+}
+
+.legend-color {
+    border: 1px solid #ccc;
+    padding: 1px;
+    width: 14px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.legend-label {
+    width: auto;
+    /*250px;*/
+
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#detail-selection-header {
+    font-weight: bold;
+}
+
+.div-table {
+    display: table;
+    width: auto;
+    background-color: #fff;
+    border-spacing: 5px;
+}
+
+.div-table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+
+.div-table-col {
+    float: left;
+    display: table-column;
+    width: auto;
+    font-weight: normal;
+}
+
+.col-right {
+    padding-left: 10px;
+    float: right;
+}
+
+div[id^="temperature-value"]::after {
+    content: " \00b0 C";
+}

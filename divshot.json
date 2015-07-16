@@ -1,0 +1,6 @@
+{
+  "name": "rpi-temperatures-website-demo",
+  "root": "public",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
