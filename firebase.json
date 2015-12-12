@@ -1,0 +1,9 @@
+{
+  "firebase": "rpi-temperatures-website-demo",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
